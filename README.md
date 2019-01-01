@@ -1,1 +1,44 @@
 # Bloch
+
+Each file is for fixing one parameter and scan another one.
+
+###########################
+The meaning of file names:
+###########################
+As "+", "=", "." maybe illegal in some system, I used "_" to replace all sign. 
+For example,"increaseEx_B_1_5" means "Fix B=1.5 and increase Ex".
+
+
+
+############################
+What does each file contains?
+############################
+In each file, you can find 3 things.
+1. One figure named "parameter...". It shows you the line this file scans.
+2. 6-panel figures * 26. Each figure correpond to one data point on the line (26 points for each line.)
+3. One ".gif" figure. This is a short movie made from the 26 original figures.
+
+
+
+##############################
+The meaning of those 6-panel figures:
+##############################
+
+1. Two panels in left column: They are time evolution of momentum kx,ky and current Ix,Iy respectively. I plot for a small time scale to make motion in one period visible.
+
+2. Upper middle: This panel shows the trajectory in k-space. In contrast to upper left panel, we observe a long timescale motion here. So whe particle is trapped in 1st BZ, you see a (nearly)closed orbit. When particle is deconfined, you see a linear line because kxky grows linearly with t in a long-term basis.
+
+3. Lower middle: This panel shows the charge accumulation (or polarization), which is just the $ intergral(I*dt) $. I plot it to make DC current more visible(especially the sign of DC current). In particular, if you plot current I directlly, the amplitude of AC component is sometimes too large so that cover up all the DC signal. 
+
+4. Two figures in right column: Fourier spectrum of k and I. 
+
+
+
+
+############################
+Meaning of the figure name
+############################
+Currently I used 2 letters to label each figure: upper case for the first one and lower case for the second, e.g. "Aa".
+Two letters corresponds to two parameters. E.g. "A" means "Ex=1", "Z": "Ex=3.5"; "a": "B=0.01", z: "B=2.5".
+There is an Excel file "FigName_Parameter_correspondence", where you can find a dictionary listing the correspondence.
+I promise I will label the Figures in a more friendly way next time ;)
